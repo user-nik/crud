@@ -4,7 +4,7 @@
     <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -82,19 +82,36 @@
       <ul class="sidebar-menu tree" data-widget="tree">
         
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-        <li class="treeview" style="height: auto;">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
+        <router-link active-class="active" :to="{ name: 'newevent'}" tag="li">
+          <a href="">
+              <i class="fa fa-link"></i>
+              <span>New Ad</span>
           </a>
-          <ul class="treeview-menu" style="display: none;">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
+        </router-link>
+        <router-link active-class="active" :to="{ name: 'myevents'}" tag="li">
+          <a href="">
+              <i class="fa fa-link"></i>
+              <span>My Events</span>
+          </a>
+        </router-link>
+        <router-link active-class="active" :to="{ name: 'newevent'}" tag="li">
+          <a href="">
+              <i class="fa fa-link"></i>
+              <span>Sign Out</span>
+          </a>
+        </router-link>
+        <router-link active-class="active" :to="{ name: 'newevent'}" tag="li">
+          <a href="">
+              <i class="fa fa-link"></i>
+              <span>Sign In</span>
+          </a>
+        </router-link>
+        <router-link active-class="active" :to="{ name: 'newevent'}" tag="li">
+          <a href="">
+              <i class="fa fa-link"></i>
+              <span>Sign Up</span>
+          </a>
+        </router-link>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
