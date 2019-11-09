@@ -1,14 +1,10 @@
 <template>
   
 
-<div class="row">
-    <div class="col-md-12">
-  <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">My events</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body table-responsive no-padding">
+<div>
+      <main-section :title="'Cобытие'" >
+
+      <div slot="body">
               <table class="table table-hover">
                 <tbody><tr>
                   <th>ID</th>
@@ -46,17 +42,20 @@
                   <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                 </tr>
               </tbody></table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
+                    </div>
+     
+    
+    </main-section>
 </div>
-</div>
+
 </template>
 
 <script>
+import MainSectionComponentVue from '../Shared/MainSectionComponent.vue';
 export default {
-
+components: {
+    mainSection:MainSectionComponentVue,
+},
 }
 </script>
 

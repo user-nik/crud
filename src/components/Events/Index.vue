@@ -1,12 +1,15 @@
 <template>
-  <h1>
-      {{path}}
-  </h1>
+  <div>
+
+            <router-view>
+            </router-view>
+
+  </div>
 </template>
 
 <script>
 export default {
-    props:['path','id']
+
 }
 </script>
 

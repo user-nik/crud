@@ -88,7 +88,7 @@
               <span>New Ad</span>
           </a>
         </router-link>
-        <router-link active-class="active" :to="{ name: 'myevents'}" tag="li">
+        <router-link active-class="active" :to="{ name: 'events'}" tag="li">
           <a href="">
               <i class="fa fa-link"></i>
               <span>My Events</span>
